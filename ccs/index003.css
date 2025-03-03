@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
+
+*{ /*margen a toda la pagina en general*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{ /*tipo y color de la letra en toda la pagina o todo aquello que este dentro del body*/
+    font-family: "Krub", sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255); /*Color de fondo de la pagina*/
+}
+
+nav{ /*atributos solo de la barra de navegacion*/
+    background: rgb(29, 124, 165);
+    width: 100%;
+    border-top: 2px solid rgb(118, 180, 231);
+    border-bottom: 2px solid rgb(118, 180, 231);
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav a{ /*atributos a los href que en este caso estan dentro de la barra de navegacion*/
+    width: 33.33%;
+    padding: .7em;
+    text-align: center;
+    transition: all .7s ease;
+}
+
+ion-icon{/*color y tamano de los iconos descargador*/
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+}
+
+nav a:hover{/*efecto a la transicion del tiempo a la hora de poner el cursor*/
+    background: rgb(118, 180, 231);
+}
+
+.fondo{
+    width: 95%;
+    height: 40em;
+    margin: auto;
+    margin-top: 4em;/*separacion haci la parte superior*/
+    margin-bottom: 2em; /*separacion hacia la parte inferior*/
+    background-size: 100% 100%;/*cantidad de imagenes que se mostraran*/
+    box-shadow: 5px 5px 30px 1px rgb(71, 146, 231); /*sombreado a las orillas del fondo*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+
+    animation: slider 15s infinite; /*se enecarga de hacer la traanscicion en el fondo*/
+}
+
+@keyframes slider{
+    0% {background-image: url(../items/perfil/fondo/ima2.jpg);}
+    50% {background-image: url(../items/perfil/fondo/ima3.jpg);}
+    70% {background-image: url(../items/perfil/fondo/ima4.jpg);}
+    100% {background-image: url(../items/perfil/fondo/ima6.jpg);}
+    
+}
+
+section{
+    
+    width: 100%;
+    height: auto;   
+    margin: auto;
+    padding: 0.5em;
+    text-align: center;
+    font-size: 2em;
+}
+
+section figure{
+    text-align: center;
+}
+
+section img{
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    box-shadow: 1px 5px 10px white;
+}
+
+section div{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+div h1{
+    font-size: 2.5em;
+    font-weight: .3em;
+}
+
+div p{
+    font-size: 1em;
+    font-weight: .3em;
+    color: rgb(191, 188, 188);
+}
+
+
+.habilidades {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: auto;
+    display: flex;  /* Asegura que el contenedor sea flexible */
+    flex-wrap: wrap;  /* Permite que los elementos se ajusten en varias filas si no caben */
+    flex-direction: row;  /* Alinea los elementos en fila */
+    justify-content: space-around;  /* Espacio entre los divs y también en los lados */
+    align-items: baseline;  /* Alinea los elementos según su línea base de texto */
+    background-color: #1c2d37;
+    padding-top: 2em;
+}
+
+
+aside h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    margin-bottom: 1em;
+
+}
+
+aside div {
+    margin-bottom: 1em 1em;/* Espacio entre divs */
+}
+
+aside p{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.colorescue{
+    color: rgb(0, 0, 0);
+}
+
+.column{
+    width: 230px;
+    padding: 1em;
+    position: relative;    
+}
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    transition: opacity .5s ease;
+    opacity: 0;
+    font-size: 20px;
+    padding: 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+}
+
+
+.column:hover .overlay{
+    opacity:1;
+}
+
+
+.mysql{
+    margin-bottom: 2em;
+}
+
+aside figure{
+    text-align: center;
+}
+
+
+
+.java1{
+    margin-bottom: 2em;
+}
+aside figure{
+    text-align: center;
+}
+
+
+
+.html1{
+    margin-bottom: 2em;
+}
+aside figure{
+    text-align: center;
+}
+
+
+.css1{
+    margin-bottom: 2em;
+}
+aside figure{
+    text-align: center;
+}
+
+
+.js1{
+    margin-bottom: 2em;
+}
+aside figure{
+    text-align: center;
+}
+
+
+main{
+    background-color:#1c2d37;
+    width: 100%;
+    display: flex;  /* Asegura que el contenedor sea flexible */
+    /*flex-wrap: wrap;  /* Permite que los elementos se ajusten en varias filas si no caben */
+    flex-direction: row;  /* Alinea los elementos en fila */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: auto; /* Ajusta la altura al 100% de la pantalla */
+    padding: 2em;
+
+}
+
+main h2{
+    font-size: 40px;
+
+}
+main p{
+    font-size: 20px;
+    color: white;
+}
+
+.enca{
+    width: 50%;
+    text-align: center;
+    margin: 3em auto; /* Centra horizontalmente */
+    color: rgb(255, 255, 255);
+}
+
+.medio{
+    width: 60%; /* Ajusta el ancho del bloque */
+    margin: auto;   
+    margin: 3em auto; /* Centra horizontalmente */
+    display: flex;  /* Asegura que el contenedor sea flexible */
+    flex-wrap: wrap;  /* Permite que los elementos se ajusten en varias filas si no caben */
+    flex-direction: row-reverse;  /* Alinea los elementos en fila */
+    justify-content: space-around;  /* Espacio entre los divs y también en los lados */
+    align-items: baseline;  /* Alinea los elementos según su línea base de texto */
+
+}
+
+.col_ima{
+    width: 100%; /* Ajusta el ancho del bloque */
+    margin-bottom: 1em;
+    text-align: center; /* Centra la imagen dentro del div */
+
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.nomCerti {
+    text-align: center;
+    position:static;
+    margin-bottom: 2em;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.aside2{
+    font-size: 40px;
+    width: 80%;
+    padding-top: .7em;
+}
+
+.aside2p{
+    color: white;
+    font-size: 25px;
+    font-family:serif;
+    
+}
+
+.margen{
+border: 3px solid rgba(0, 0, 0, 0.413);  
+}
+
+div.scroll-hroizontal{
+    
+    background: rgba(29, 124, 165, .3);
+    overflow: auto; /*ayuda a que no se desborde y apareza una linea de scrooll*/
+    white-space: nowrap; /*nowrap es para que no de salto de linea, si no se muestre horizontal*/
+    padding: 5px;
+    margin-bottom: 2.5em;
+    margin-right: 1em;
+    padding-left: 1em;
+}
+
+div.scroll-hroizontal{
+    padding: 30px;
+    margin-left: 3em;
+    margin-right: 3em;
+}
+
+::-webkit-scrollbar-track{ /*webkit es para navegador google chrome*/
+    background: #70a8c7b1;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+    height: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(19, 95, 194, 0.854);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgba(25, 36, 32, 0.797);
+}
+
+
+
+
+footer {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.contacto p {
+    margin: 8px 0;
+    font-size: 1em;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+.redes {
+    display: inline-flexbox;
+    gap: 2em;
+}
+
+
+.redes a {
+    font-size: 24px;
+    transition: .3s all ease;
+    text-decoration: none;
+}
+
+.redes a:hover {
+    color: #007bff;
+}
+
+.legal {
+    flex-basis: 100%;
+    text-align: center;
+    border-top: 1px solid #444444;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.legal a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.legal a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/**************tabla de trabajos***************/
+
+.trabajo{
+    padding-top: 2em;
+    padding-bottom: 2em;
+
+    width: 110%; /* Asegúrate de que el aside ocupe el ancho disponible */
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */    
+}
+
+
+.trabajoh2 {
+    text-align: center;
+    color: #06203b;
+    margin-bottom: 20px;
+
+    
+}
+
+table {
+    text-align: center ;
+    width: 90%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: rgb(118, 180, 231);
+    color: white;
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+td {
+    color: #555;
+}
+
+/*TRABAJOS ECHOS EN LA ESCUELA*/
+
+.proyectos{
+    color: #06203b;
+}
+
